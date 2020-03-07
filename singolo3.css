@@ -190,6 +190,13 @@ footer {
     cursor: pointer;
 }
 
+input:invalid {
+    border: 1px red;
+}
+input:valid {
+    border: 1px green;
+}
+
 
 
 
