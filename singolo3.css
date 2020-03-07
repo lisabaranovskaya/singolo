@@ -19,11 +19,12 @@ body {
 .form__text > h1 {
     margin: 0;
     margin-left: 40px;
-    padding-top: 60px;
+    padding-top: 60forpx;
     font-family: "Lato";
     font-weight: 900;
     font-size: 3rem;
     color: #f0d8d9;
+    padding-top: 60px;
 }
 
 .form__text > p {
@@ -156,13 +157,38 @@ img.icon.icon_email {
 }
 
 .footer > div {
+    margin: auto;
     width: 1020px;
     height: 76px;
     background-color: #2d303a;
-    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+footer {
+    margin: 0;
+}
 
+.copyright > p {
+    margin: 0;
+    color: #666d89;
+    font-family: Lato;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 42px;
+}
+
+.social__icons {
+    margin-right: 30px;
+    display: flex;
+    width: 172px;
+    justify-content: space-evenly;
+}
+
+.icon {
+    cursor: pointer;
+}
 
 
 
