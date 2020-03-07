@@ -11,3 +11,159 @@ body {
     max-width: 1020px;
     margin: auto;
 }
+
+.form > div {
+    background-color: #f06c64;
+}
+
+.form__text > h1 {
+    margin: 0;
+    margin-left: 40px;
+    padding-top: 60px;
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 3rem;
+    color: #f0d8d9;
+}
+
+.form__text > p {
+    width: 939px;
+    margin-left: 41px;
+    margin-top: 16px;
+    color: #f0d8d9;
+    line-height: 30px;
+    font-weight: 300;
+    font-family: "Lato";
+    text-align: justify;
+}
+
+ .layout-2-column {
+    display: flex;
+    flex-direction: row;
+} 
+
+.side__text > h5 {
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+.side__text > p {
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 1.2rem;
+    margin-top: 8px;
+    width: 301px;
+    text-align: justify;
+    word-spacing: -0.5px;
+}
+
+.side__text {
+    width: 301px;
+    margin-left: 20px;
+    margin-top: 25px;
+}
+
+input {
+    background-color: #d6564f;
+    width: 619px;
+    height: 36px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 40px;
+    margin-bottom: 16px;
+}
+
+textarea {
+    width: 614px;
+    height: 202px;
+    background-color: #d6564f;
+    border-radius: 6px;
+    margin-left: 40px;
+    border: none;
+}
+
+::placeholder {
+    font-family: "Lato";
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding-left: 15px;
+    color: #f48c8f;
+}
+
+form {
+    margin-top: 25px;
+    width: 659px;
+}
+
+textarea::placeholder {
+    padding-top: 9px;
+    padding-left: 13px;
+    
+}
+
+h5 {
+    margin: 0;
+}
+
+.contacts > p, .contacts > a  {
+    display: inline;
+    color: #f0d8d9;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-left: 12px;
+}
+
+.contacts > a {
+    text-decoration: none;
+}
+
+.contacts {
+    margin-top: 22px;
+}
+
+img.icon.icon_place {
+    padding-left: 4px;
+}
+
+img.icon.icon_phone {
+    padding-left: 1px;
+}
+
+img.icon.icon_email {
+    padding-top: 10px;
+}
+
+.bottom__line {
+    height: 6px;
+    background-color: #ea676b;
+    margin-top: 32px;
+}
+
+.button.button_colored {
+    border: none;
+    border-radius: 4px;
+    margin-left: 41px;
+    font-family: "Lato";
+    font-size: 1.2rem;
+    padding: 4px;
+    margin-top: 5px;
+    background-color: #f0d8d9;
+}
+
+.footer > div {
+    width: 1020px;
+    height: 76px;
+    background-color: #2d303a;
+    margin: auto;
+}
+
+
+
+
+
+
