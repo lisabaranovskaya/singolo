@@ -12,11 +12,11 @@ body {
     margin: auto;
 }
 
-.form > div {
+.form>div {
     background-color: #f06c64;
 }
 
-.form__text > h1 {
+.form__text>h1 {
     margin: 0;
     margin-left: 40px;
     padding-top: 60forpx;
@@ -27,7 +27,7 @@ body {
     padding-top: 60px;
 }
 
-.form__text > p {
+.form__text>p {
     width: 939px;
     margin-left: 41px;
     margin-top: 16px;
@@ -38,19 +38,19 @@ body {
     text-align: justify;
 }
 
- .layout-2-column {
+.layout-2-column {
     display: flex;
     flex-direction: row;
-} 
+}
 
-.side__text > h5 {
+.side__text>h5 {
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 900;
     font-size: 1.8rem;
 }
 
-.side__text > p {
+.side__text>p {
     color: #f0d8d9;
     font-family: "Lato";
     font-weight: 400;
@@ -103,14 +103,13 @@ form {
 textarea::placeholder {
     padding-top: 9px;
     padding-left: 13px;
-    
 }
 
 h5 {
     margin: 0;
 }
 
-.contacts > p, .contacts > a  {
+.contacts>p, .contacts>a {
     display: inline;
     color: #f0d8d9;
     font-family: Lato;
@@ -119,7 +118,7 @@ h5 {
     padding-left: 12px;
 }
 
-.contacts > a {
+.contacts>a {
     text-decoration: none;
 }
 
@@ -156,7 +155,7 @@ img.icon.icon_email {
     background-color: #f0d8d9;
 }
 
-.footer > div {
+.footer>div {
     margin: auto;
     width: 1020px;
     height: 76px;
@@ -170,7 +169,7 @@ footer {
     margin: 0;
 }
 
-.copyright > p {
+.copyright>p {
     margin: 0;
     color: #666d89;
     font-family: Lato;
@@ -193,10 +192,7 @@ footer {
 input:invalid {
     border: 1px red;
 }
+
 input:valid {
     border: 1px green;
 }
-
-
-
-
