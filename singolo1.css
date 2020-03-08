@@ -1,0 +1,257 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0px;
+    font-size: 1.8rem;
+    font-family: "Lato", "Open Sans", sans-serif;
+}
+
+.header > div {
+    max-width: 1020px;
+    height: 89px;
+    margin: auto;
+    background-color: #2d303a;
+}
+
+.dot {
+    display: inline;
+    color: #e9534b;
+}
+
+header {
+    margin: auto;
+    width: 1020px;
+}
+
+.logo {
+    font-family: "Lato";
+    letter-spacing: -0.5px;
+    font-size: 25px;
+    line-height: 6px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 40px;
+
+}
+
+.header__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__list {
+    font-size: 1.2rem;
+    line-height: 6px;
+    font-family: "Lato";
+    font-weight: 700;
+    display: flex;
+    list-style-type: none;
+    flex-basis: 100%;
+    justify-content: space-between;
+    margin-top: 46px;
+    width: 371px;
+    padding-left: 454px;
+    padding-right: 40px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
+    line-height: 6px;
+}
+
+.nav.nav_active {
+    color: #f06c64;
+    cursor: pointer;
+}
+
+.nav {
+    cursor: pointer;
+}
+
+.header__bottom {
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+    margin: auto;
+}
+
+li > p {
+    color: #494e62;
+
+}
+
+.nav {
+    cursor: pointer;
+}
+
+.slider > div {
+    margin: auto;
+    background-color: #f06c64;
+    height: 595px;
+    max-width: 1020px;
+}
+
+.slider__bottom {
+    height: 6px;
+    max-width: 1020px;
+    background-color: #ea676b;
+    margin: auto;
+}
+
+.chevs {
+    cursor: pointer;
+}
+
+ .chevs.chevs_back {
+   margin-left: 42px;
+   position: relative;
+   top: -317px;
+} 
+
+.phone.phone_vertical {
+    margin-top: 59px;
+    margin-left: 54px;
+    margin-bottom: 83px;
+}
+
+.phone.phone_horizontal {
+    margin-top: 180px;
+    margin-left: 73px;
+    margin-bottom: 205px;
+    margin-right: 81px;
+}
+
+.chevs.chevs_forward {
+    position: relative;
+    top: -317px;
+    left: -35px;
+ }
+
+ .services__text > h2 {
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    font-size: 30px;
+    padding-top: 55px;
+    margin-left: 40px;
+ }
+
+ .services__text > p {
+    letter-spacing: normal;
+    color: #767e9e;
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: 300;
+    line-height: 30px;
+    width: 939px;
+    margin-top: 18px;
+    margin-left: 41px;
+    text-align: justify;
+ }
+
+ .services > div {
+     margin: auto;
+     max-width: 1020px;
+     background-color: #f2f2f2;
+     height: 496px;
+ }
+
+ h2 {
+     margin: 0;
+ }
+
+ .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 299px [col-start]);
+    grid-template-rows: 86px 84px;
+    column-gap: 60px;
+}
+
+.custom__design {
+    margin-left: 41px;
+    margin-top: 32px;
+    display: flex;
+}
+
+.custom-design__text > h5 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin-top: -2px;
+    margin-left: -1px;
+}
+
+.custom-design__text > p {
+    width: 219px;
+    height: 128px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.custom-design__text {
+    margin-left: 20px;
+}
+
+.pen, .lamp {
+    width: 110%;
+    height: 110%;
+}
+
+.lamp {
+    margin-top: 15px;
+}
+
+.innovative-ideas {
+    display: flex;
+}
+
+.innovative-ideas__text > h5 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    font-weight: 900;
+    text-align: left;
+    margin: 0;
+}
+
+.innovative-ideas__text > p {
+    width: 219px;
+    height: 128px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    padding-top: 9px;
+}
+
+.innovative-ideas__text {
+    margin-top: 31px;
+    margin-left: 20px;
+}
+
+.love {
+
+}
+
+.heart {
+
+}
+
