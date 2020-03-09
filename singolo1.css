@@ -83,11 +83,16 @@ a:link {
 
 li > p {
     color: #494e62;
-
+    position: relative;
+    top: -12px;
 }
 
 .nav {
     cursor: pointer;
+}
+
+.nav:hover {
+    text-decoration: underline;
 }
 
 .slider > div {
@@ -111,26 +116,28 @@ li > p {
  .chevs.chevs_back {
    margin-left: 42px;
    position: relative;
-   top: -317px;
+   top: -258px;
 } 
 
 .phone.phone_vertical {
-    margin-top: 59px;
-    margin-left: 54px;
+    margin-left: 51px;
     margin-bottom: 83px;
+    position: relative;
+    top: 52px;
 }
 
 .phone.phone_horizontal {
-    margin-top: 180px;
-    margin-left: 73px;
+    position: relative;
+    top: 52px;
+    margin-left: 70px;
     margin-bottom: 205px;
     margin-right: 81px;
 }
 
 .chevs.chevs_forward {
     position: relative;
-    top: -317px;
-    left: -35px;
+    top: -258px;
+    left: -30px;
  }
 
  .services__text > h2 {
@@ -138,7 +145,7 @@ li > p {
     font-family: "Lato";
     font-weight: 900;
     font-size: 30px;
-    padding-top: 55px;
+    padding-top: 58px;
     margin-left: 40px;
  }
 
@@ -171,6 +178,8 @@ li > p {
     grid-template-columns: repeat(3, 299px [col-start]);
     grid-template-rows: 86px 84px;
     column-gap: 60px;
+    row-gap: 67px;
+    margin-top: -3px;
 }
 
 .custom__design {
@@ -195,24 +204,24 @@ li > p {
     width: 219px;
     height: 128px;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 21px;
     color: #767e9e;
     font-family: "Lato";
     font-weight: 400;
     text-align: justify;
-    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .custom-design__text {
     margin-left: 20px;
 }
 
-.pen, .lamp {
+.pen, .lamp /* .star, .bubble, .screen */ {
     width: 110%;
     height: 110%;
 }
 
-.lamp {
+.lamp, .heart {
     margin-top: 15px;
 }
 
@@ -221,6 +230,28 @@ li > p {
 }
 
 .innovative-ideas__text > h5 {
+    margin: 0;
+}
+
+.innovative-ideas__text > p {
+    width: 219px;
+    height: 128px;
+    font-size: 12px;
+    line-height: 21px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: justify;
+    margin-top: 10px;
+    letter-spacing: 0.1px;
+}
+
+.innovative-ideas__text {
+    margin-top: 31px;
+    margin-left: 20px;
+}
+
+h5 {
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
@@ -230,7 +261,7 @@ li > p {
     margin: 0;
 }
 
-.innovative-ideas__text > p {
+.love__text > p, .layout__text > p, .support__text > p, .star__text > p {
     width: 219px;
     height: 128px;
     font-size: 12px;
@@ -239,19 +270,53 @@ li > p {
     font-family: "Lato";
     font-weight: 400;
     text-align: justify;
-    padding-top: 9px;
+
 }
 
-.innovative-ideas__text {
-    margin-top: 31px;
-    margin-left: 20px;
+.layout, .love, .support, .star {
+    display: flex;
 }
 
 .love {
-
+    margin-left: -38px;
+    margin-top: 8px;
+    width: 110%;
+    height: 110%;
 }
 
 .heart {
+    justify-self: start;
+}
 
+.layout {
+    margin-left: 41px;
+}
+
+img.screen, img.bubble, img.star {
+    margin-top: -17px;
+}
+
+.layout__text, .support__text, .love__text, .star__text {
+    margin-left: 20px;
+}
+
+.layout__text > h5 {
+    margin-top: 2px;
+}
+
+.layout__text > p {
+    margin-top: 10px;
+}
+
+.bubble {
+    margin-top: -10px;
+}
+
+.love__text {
+    margin-top: 23px;
+}
+
+.star {
+    margin-left: -19px;
 }
 
