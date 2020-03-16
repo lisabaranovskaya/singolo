@@ -74,6 +74,11 @@ a.nav {
     cursor: pointer;
 }
 
+.nav_active {
+    color: #f06c64;
+    cursor: pointer;
+}
+
 
 .header__bottom {
     width: 1020px;
@@ -403,7 +408,7 @@ section.portfolio>div>div.portfolio__text {
     margin: 0px;
 }
 
-.button.button_bordered {
+.button_bordered {
     height: 22px;
     font-size: 1.2rem;
     font-weight: 400;
@@ -415,8 +420,8 @@ section.portfolio>div>div.portfolio__text {
     cursor: pointer;
 }
 
-.button.button.button_bordered.button_selected {
-    width: 29px;
+.button_selected {
+   
     height: 22px;
     color: #dedede;
     border: 1px solid #c5c5c5;
