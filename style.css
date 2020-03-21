@@ -692,3 +692,23 @@ input:valid {
     border: 1px green;
 }
 
+#message-block {
+    position: absolute;
+    width: 50vh;
+    height: 20vh;
+    top: 0;
+    left: 0;
+    background: #2d303a;
+}
+
+#message-block.hidden {
+    display: none;
+}
+
+#message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid black;
+    text-align: center;
+}

@@ -53,7 +53,7 @@
             </div>
         </header>
         <div class="header__bottom"></div>
-        <section class="slider">
+        <section class="slider" id="slider">
             <div class="wrapper">
                 <img class="chevs chevs_back" src="assets/images/chevs/chev1.png" alt="back arrow">
                 <img class="phone phone_vertical" src="assets/images/phones/iPhone_Vertical.png" alt="iPhone vertical">
@@ -219,10 +219,17 @@
                     <form action method="POST">
                         <input type="text" name="name" placeholder="Name (Required)" pattern="^[a-zA-Z\s]+$" required>
                         <input type="email" name="email" placeholder="Email (Required)" required>
-                        <input type="text" name="subject" placeholder="Subject" required>
+                        <input id="subject" type="text" name="subject" placeholder="Subject" required>
                         <textarea name="description" placeholder="Describe your project in detail..."></textarea>
                         <div class="submit__button">
                             <button class="button button_colored" type="submit">Submit</button>
+                        </div>
+                        <div id="message-block" class="hidden">
+                            <div id="message">
+                                <p>Message sent. <span id="result">klfg;bkldn</span></p>
+                                <br>
+                                <button id="close-btn">OK</button>
+                            </div>
                         </div>
                     </form>
                     <div class="side__text">

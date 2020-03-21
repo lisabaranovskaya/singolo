@@ -1,4 +1,6 @@
 const MENU = document.querySelector(".nav__list");
+const BUTTON = document.querySelector('#btn');
+const CLOSE_BUTTON = document.querySelector('#close-btn');
 
 
 MENU.addEventListener('click', (event) => {
@@ -6,26 +8,17 @@ MENU.addEventListener('click', (event) => {
     event.target.classList.add("nav_active");
 });
 
-const tags = document.querySelector(".porttfolio__buttons");
 
-tags.addEventListener('click', (event) => {
-    tags.querySelectorAll('button').forEach(el => el.classList.remove("button_selected"));
-    event.target.classList.add("button_selected");
-    if (event.target.innerText === "All") {
-        showAllPictures();
-    } else {
-        filterPicturesBySelectedTag(event.target.innerText);
-    }
 
+ BUTTON.addEventListener('click', (event) => {
+    const subject = document.querySelector("#subject").value;
+    document.querySelector("#result").innerText = subject;
+    document.getElementById('message-block').classList.remove('hidden');
 });
 
-const showAllPictures = () => {
-
-}
-
-const filterPicturesBySelectedTag = (selectedTag) => {
-    var pictures = document.querySelectorAll('.layout-4-column .image');
-    console.log(pictures);
-}
+CLOSE_BUTTON.addEventListener('click', () => {
+    document.querySelector("#result").innerText = '';
+    document.getElementById('message-block').classList.add('hidden');
+});
 
 
