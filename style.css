@@ -1,6 +1,5 @@
 /* singolo 1 css */
 
-
 html {
     font-size: 10px;
 }
@@ -11,11 +10,13 @@ body {
     font-family: "Lato", "Open Sans", sans-serif;
 }
 
-.header > div {
+.header>div {
     max-width: 1020px;
     height: 89px;
     margin: auto;
     background-color: #2d303a;
+    position: fixed;
+    z-index: 2;
 }
 
 .dot {
@@ -37,7 +38,6 @@ header {
     font-weight: 700;
     margin: 0;
     margin-left: 40px;
-
 }
 
 .header__text {
@@ -79,15 +79,14 @@ a.nav {
     cursor: pointer;
 }
 
-
 .header__bottom {
     width: 1020px;
-    height: 6px;
     background-color: #323746;
     margin: auto;
+    height: 6px;
 }
 
-li > p {
+li>p {
     color: #494e62;
     position: relative;
     top: -12px;
@@ -101,61 +100,93 @@ li > p {
     text-decoration: underline;
 }
 
-.slider > div {
+#blue {
+    background-color: #648BF0;
+    
+}
+
+.item.active {
     margin: auto;
-    background-color: #f06c64;
     height: 595px;
     max-width: 1020px;
 }
+
+.image_bordered {
+    border: 5px solid #F06C64;
+}
+
+
+
+.slider > div {
+    background-color: transparent;
+}
+
+
 
 .slider__bottom {
     height: 6px;
     max-width: 1020px;
     background-color: #ea676b;
     margin: auto;
+
+}
+
+
+.chevs_back:hover, .chevs_forward:hover {
+    transform: scale(1.5, 1.25);
 }
 
 .chevs {
-    cursor: pointer;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 1020px;
+    max-height: 27px;
+    flex-direction: row;
+    position: relative;
+    top: -54%;
+    background-color: transparent;
+    z-index: 0;
 }
 
- .chevs.chevs_back {
-   margin-left: 42px;
-   position: relative;
-   top: -258px;
-} 
+.chevs_back {
+    margin-left: 40px;
+}
+
+.chevs_forward {
+    margin-right: 40px;
+}
 
 .phone.phone_vertical {
     margin-left: 51px;
     margin-bottom: 83px;
+    margin-top: 145px;
     position: relative;
-    top: 52px;
+    left: 60px;
+    z-index: 1;
 }
 
 .phone.phone_horizontal {
     position: relative;
-    top: 52px;
     margin-left: 70px;
     margin-bottom: 205px;
     margin-right: 81px;
+    left: 60px;
+    z-index: 1;
 }
 
-.chevs.chevs_forward {
-    position: relative;
-    top: -258px;
-    left: -30px;
- }
 
- .services__text > h2 {
+
+.services__text>h2 {
     color: #666d89;
     font-family: "Lato";
     font-weight: 900;
     font-size: 30px;
     padding-top: 58px;
     margin-left: 40px;
- }
+}
 
- .services__text > p {
+.services__text>p {
     letter-spacing: normal;
     color: #767e9e;
     font-size: 18px;
@@ -166,20 +197,23 @@ li > p {
     margin-top: 18px;
     margin-left: 41px;
     text-align: justify;
- }
+}
 
- .services > div {
-     margin: auto;
-     max-width: 1020px;
-     background-color: #f2f2f2;
-     height: 496px;
- }
+.services>div {
+    margin: auto;
+    max-width: 1020px;
+    background-color: #f2f2f2;
+    height: 496px;
+    
+}
 
- h2 {
-     margin: 0;
- }
 
- .services-grid {
+
+h2 {
+    margin: 0;
+}
+
+.services-grid {
     display: grid;
     grid-template-columns: repeat(3, 299px [col-start]);
     grid-template-rows: 86px 84px;
@@ -194,7 +228,7 @@ li > p {
     display: flex;
 }
 
-.custom-design__text > h5 {
+.custom-design__text>h5 {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -206,7 +240,7 @@ li > p {
     margin-left: -1px;
 }
 
-.custom-design__text > p {
+.custom-design__text>p {
     width: 219px;
     height: 128px;
     font-size: 12px;
@@ -222,7 +256,7 @@ li > p {
     margin-left: 20px;
 }
 
-.pen, .lamp /* .star, .bubble, .screen */ {
+.pen, .lamp {
     width: 110%;
     height: 110%;
 }
@@ -235,11 +269,11 @@ li > p {
     display: flex;
 }
 
-.innovative-ideas__text > h5 {
+.innovative-ideas__text>h5 {
     margin: 0;
 }
 
-.innovative-ideas__text > p {
+.innovative-ideas__text>p {
     width: 219px;
     height: 128px;
     font-size: 12px;
@@ -267,7 +301,7 @@ h5 {
     margin: 0;
 }
 
-.love__text > p, .layout__text > p, .support__text > p, .star__text > p {
+.love__text>p, .layout__text>p, .support__text>p, .star__text>p {
     width: 219px;
     height: 128px;
     font-size: 12px;
@@ -276,7 +310,6 @@ h5 {
     font-family: "Lato";
     font-weight: 400;
     text-align: justify;
-
 }
 
 .layout, .love, .support, .star {
@@ -306,11 +339,11 @@ img.screen, img.bubble, img.star {
     margin-left: 20px;
 }
 
-.layout__text > h5 {
+.layout__text>h5 {
     margin-top: 2px;
 }
 
-.layout__text > p {
+.layout__text>p {
     margin-top: 10px;
 }
 
@@ -326,8 +359,6 @@ img.screen, img.bubble, img.star {
     margin-left: -19px;
 }
 
-
-
 /* singolo 2 css */
 
 html {
@@ -340,10 +371,10 @@ body {
     font-family: "Lato", "Open Sans", sans-serif;
 }
 
-.wrapper {
+/* .wrapper {
     max-width: 1020px;
     margin: auto;
-}
+} */
 
 .portfolio__text>h1 {
     margin: 0px;
@@ -420,11 +451,19 @@ section.portfolio>div>div.portfolio__text {
     cursor: pointer;
 }
 
+.img_hidden {
+    display: none;
+}
+
 .button_selected {
-   
     height: 22px;
     color: #dedede;
     border: 1px solid #c5c5c5;
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 .layout-4-column {
@@ -498,7 +537,6 @@ section.about-us>div>p {
 }
 
 /* singolo 3 css */
-
 
 .wrapper {
     max-width: 1020px;
@@ -694,11 +732,10 @@ input:valid {
 
 #message-block {
     position: absolute;
+    left: 40%;
     width: 50vh;
     height: 20vh;
-    top: 0;
-    left: 0;
-    background: #2d303a;
+    background: transparent;
 }
 
 #message-block.hidden {
@@ -706,9 +743,175 @@ input:valid {
 }
 
 #message {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    min-height: 20vh;
+    max-width: 30vh;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Lato';
+    background-color: #2d303a;
+    border-radius: 3%;
+}
+
+#close-btn {
+    font-family: 'Lato';
+    font-size: 1.8rem;
+    background-color: #d6564f;
+    font-weight: 900;
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 10%;
+}
+
+#btn {
+    background-color: #d6564f;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+#btn:hover {
+    background-color: #c77570;
+}
+
+.slider {
+    margin: auto;
+    max-width: 1020px;
+    height: 585px;
+   padding-bottom: 100px;
+    background-color: #f06c64;
+    
+}
+
+#red {
+    
+}
+
+.item {
+    display: none;
+    animation: 0.5s ease-in-out;
+}
+
+.item.active, .item.next {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slider>div.wrapper {
+    position: relative;
+    overflow: hidden;
+    height: 585px;
+    max-width: 1020px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+}
+
+.slider-image {
+    position: relative;
+    top: 90px;
+}
+
+.next {
+    position: absolute;
+    width: 100%;
+}
+
+.control {
+    position: absolute;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+
+
+.slide-phone-screen {
+    position: absolute;
+    border-radius: 3px;
+    background-color: #000000;
+    opacity: 0;
+    transition: 1.8s;
+    z-index: 2;
+}
+
+.slide-phone-screen-1 {
+    position: relative;
+    top: -506px;
+    left: 125px;
+    width: 189px;
+    height: 334px;
+
+}
+
+.slide-phone-screen-2 {
+    position: relative;
+    top: -768px;
+    left: 485px;
+    width: 334px;
+    height: 188px;
+}
+
+.slider .slide-phone {
+    position: absolute;
+    z-index: 2;
+    border-radius: 27px;
+    cursor: pointer;
+}
+
+@media (min-width: 1020px) {
+.slide-phone-2 {
+    height: 216px;
+    width: 459px;
+    top: 265px;
+    left: 425px;
+} }
+
+@media (min-width: 1020px) {
+.slide-phone-1 {
+    width: 216px;
+    top: 144px;
+    left: 112px;
+    height: 459px;
+} }
+
+.screen-off {
+    opacity: 1;
 }
