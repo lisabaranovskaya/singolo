@@ -102,35 +102,28 @@ li>p {
 
 #blue {
     background-color: #648BF0;
-    
 }
 
 .item.active {
     margin: auto;
     height: 595px;
-    max-width: 1020px;
+    width: 1020px;
 }
 
 .image_bordered {
     border: 5px solid #F06C64;
 }
 
-
-
-.slider > div {
+.slider>div {
     background-color: transparent;
 }
 
-
-
 .slider__bottom {
     height: 6px;
-    max-width: 1020px;
+    width: 1020px;
     background-color: #ea676b;
     margin: auto;
-
 }
-
 
 .chevs_back:hover, .chevs_forward:hover {
     transform: scale(1.5, 1.25);
@@ -175,8 +168,6 @@ li>p {
     z-index: 1;
 }
 
-
-
 .services__text>h2 {
     color: #666d89;
     font-family: "Lato";
@@ -201,13 +192,10 @@ li>p {
 
 .services>div {
     margin: auto;
-    max-width: 1020px;
+    width: 1020px;
     background-color: #f2f2f2;
     height: 496px;
-    
 }
-
-
 
 h2 {
     margin: 0;
@@ -370,11 +358,6 @@ body {
     font-size: 1.8rem;
     font-family: "Lato", "Open Sans", sans-serif;
 }
-
-/* .wrapper {
-    max-width: 1020px;
-    margin: auto;
-} */
 
 .portfolio__text>h1 {
     margin: 0px;
@@ -539,7 +522,7 @@ section.about-us>div>p {
 /* singolo 3 css */
 
 .wrapper {
-    max-width: 1020px;
+    width: 1020px;
     margin: auto;
 }
 
@@ -780,16 +763,13 @@ input:valid {
 
 .slider {
     margin: auto;
-    max-width: 1020px;
+    width: 1020px;
     height: 585px;
-   padding-bottom: 100px;
+    padding-bottom: 100px;
     background-color: #f06c64;
-    
 }
 
-#red {
-    
-}
+#red {}
 
 .item {
     display: none;
@@ -806,7 +786,7 @@ input:valid {
     position: relative;
     overflow: hidden;
     height: 585px;
-    max-width: 1020px;
+    width: 1020px;
     padding-bottom: 100px;
     margin-bottom: 0;
 }
@@ -861,8 +841,6 @@ input:valid {
     }
 }
 
-
-
 .slide-phone-screen {
     position: absolute;
     border-radius: 3px;
@@ -878,7 +856,6 @@ input:valid {
     left: 125px;
     width: 189px;
     height: 334px;
-
 }
 
 .slide-phone-screen-2 {
@@ -897,21 +874,142 @@ input:valid {
 }
 
 @media (min-width: 1020px) {
-.slide-phone-2 {
-    height: 216px;
-    width: 459px;
-    top: 265px;
-    left: 425px;
-} }
+    .slide-phone-2 {
+        height: 216px;
+        width: 459px;
+        top: 265px;
+        left: 425px;
+    }
+}
 
 @media (min-width: 1020px) {
-.slide-phone-1 {
-    width: 216px;
-    top: 144px;
-    left: 112px;
-    height: 459px;
-} }
+    .slide-phone-1 {
+        width: 216px;
+        top: 144px;
+        left: 112px;
+        height: 459px;
+    }
+}
 
 .screen-off {
     opacity: 1;
+}
+
+@media only screen and (width: 768px) {
+    .header>div.wrapper {
+        width: 100vw;
+        min-height: 95px;
+    }
+    .header__bottom {
+        width: 100vw;
+    }
+    .nav__list {
+        margin-top: 26px;
+        width: 398px;
+        height: 14px;
+        padding-left: 90px;
+    }
+    .header__text {
+        height: 95px;
+    }
+    .phone.phone_vertical {
+        position: absolute;
+        width: 180.85px;
+        height: 363.74px;
+        margin-left: 23px;
+    }
+    .phone.phone_horizontal {
+        position: absolute;
+        height: 180.93px;
+        width: 364.21px;
+        margin-top: 230px;
+        left: 240px;
+    }
+    .slider, .slider>div.wrapper {
+        width: 100vw;
+        height: 451px;
+    }
+    .services>div.wrapper {
+        height: 610px;
+    }
+    .services-grid {
+        grid-template-columns: repeat(2, 299px [col-start]);
+    }
+    .services__text>h2 {
+        padding-top: 39px;
+    }
+    .services__text>p {
+        width: 687px;
+    }
+    .love, .support {
+        margin-left: 40px;
+        margin-top: 0px;
+    }
+    .star, .layout {
+        margin-left: 0px;
+    }
+    .layout-4-column {
+        width: 100vw;
+    }
+    .about-us>div, .portfolio>div, .services>div, .form>div {
+        width: 100vw;
+    }
+    section.about-us>div>p {
+        width: 688px;
+    }
+    div.employee_content>img {
+        width: 85%;
+    }
+    .employee_content {
+        width: 254px;
+        padding: -15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .employee {
+        width: 688px;
+        height: 542px;
+    }
+    .bottom__line.portfolio {
+        width: 100vw;
+    }
+    .form__text>p {
+        width: 689px;
+        height: 96px;
+    }
+
+    .form__text > h2 {
+        padding-top: 53px;
+    }
+
+    .quote__form {
+        width: 689px;
+        
+    }
+
+    form, input, textarea {
+        width: 442px;
+    }
+
+    form {
+        margin-top: 0px;
+    }
+
+    .side__text {
+        width: 221px;
+        margin-right: -37px;
+        margin-top: 0px;
+        margin-left: 69px;
+    }
+
+    .form {
+        height: 631px;
+    }
+
+    .side__text> p {
+        width: inherit;
+    }
+    .footer, .footer > div {
+        width: 100vw;
+    }
 }
