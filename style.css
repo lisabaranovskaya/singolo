@@ -895,7 +895,7 @@ input:valid {
     opacity: 1;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1019px) {
+@media (min-width: 768px) and (max-width: 1019px) {
     .body {
         width: 100vw;
     }
@@ -1051,7 +1051,7 @@ input:valid {
     }
 }
 
-@media only screen and (min-width: 375px) and (max-width: 767px) {
+@media (min-width: 375px) and (max-width: 767px) {
     body>* {
         width: 100vw;
     }
@@ -1105,7 +1105,7 @@ input:valid {
     }
     .services>div.wrapper {
         width: 100vw;
-        height: 1030px;
+        height: 1100px;
     }
     .services__text>h2 {
         padding-top: 25px;
@@ -1228,5 +1228,9 @@ input:valid {
 
     footer > div.wrapper > .social__links {
         margin-top: 0px;
+    }
+
+    .slider-image {
+        width: 37%;
     }
 }
