@@ -2,12 +2,14 @@
 
 html {
     font-size: 10px;
+    width: 100vw;
 }
 
 body {
     margin: 0px;
     font-size: 1.8rem;
     font-family: "Lato", "Open Sans", sans-serif;
+    overflow-x: hidden;
 }
 
 .header>div {
@@ -896,6 +898,9 @@ input:valid {
 }
 
 @media (min-width: 768px) and (max-width: 1019px) {
+    html {
+        width: 100vw;
+    }
     .body {
         width: 100vw;
     }
@@ -1051,6 +1056,10 @@ input:valid {
     }
     .chevs {
         width: 100vw;
+    }
+    html {
+        width: 100vw;
+        overflow-x: hidden;
     }
 }
 
@@ -1239,5 +1248,9 @@ input:valid {
 
     .slider-image {
         width: 37%;
+    }
+    html {
+        width: 100vw;
+        overflow-x: hidden;
     }
 }
