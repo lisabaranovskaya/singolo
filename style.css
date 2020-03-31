@@ -1049,6 +1049,9 @@ input:valid {
     .portfolio__text {
         width: 100vh;
     }
+    .chevs {
+        width: 100vw;
+    }
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -1195,6 +1198,10 @@ input:valid {
 
     .employee_content > .social__icons {
         margin-left: 0px;
+    }
+
+    .last-four {
+        display: none;
     }
 
     section.form > div.wrapper {
